@@ -1,4 +1,4 @@
-(function(app) {
+(function increment(app) {
   app.incrementerComponent = ng.core.Component({
     selector: 'my-app',
     templateUrl: '../views/incrementer.html'
@@ -20,4 +20,5 @@
       }
     }
   })
+  ng.platform.browser.bootstrap(app.incrementerComponent);
 })(window.app || (window.app = {}))
