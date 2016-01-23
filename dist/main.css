@@ -1,0 +1,65 @@
+.titleCent {
+  text-align: center;
+  font-size: 72px;
+}
+
+@media (max-width: 600px) {
+  .titleCent {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+.left {
+  background: url("../img/leftgray.png") no-repeat;
+  background-size: 150px;
+  height: 50vh;
+  margin-top: 10%;
+  background-position: left;
+}
+
+.left:active {
+  background: url("../img/left.png") no-repeat;
+  background-size: 150px;
+  background-position: left;
+}
+
+.right {
+  background: url("../img/rightgray.png") no-repeat;
+  background-size: 150px;
+  height: 50vh;
+  margin-top: 10%;
+  background-position: right;
+}
+.right :active {
+  background: url("../img/right.png") no-repeat;
+  background-size: 150px;
+  background-position: right;
+}
+
+.number {
+  margin-bottom: 50%;
+  margin-top: 20%;
+}
+.number .numberCent {
+  font-size: 300px;
+  text-align: center;
+}
+
+.negative {
+  color: red;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .number {
+    margin-top: 100%;
+  }
+  .number .numberCent {
+    font-size: 120px;
+    text-align: center;
+  }
+}

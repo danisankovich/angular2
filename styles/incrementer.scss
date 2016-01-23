@@ -1,34 +1,39 @@
+$imgSize: 150px;
+$imgHeight: 50vh;
+$imgTop: 10%;
+
 .left {
   background: url("../img/leftgray.png") no-repeat;
-  background-size: 150px;
-  height: 50vh;
-  margin-top: 10%;
+  background-size: $imgSize;
+  height: $imgHeight;
+  margin-top: $imgTop;
   background-position: left;
 }
 .left:active {
   background: url("../img/left.png") no-repeat;
-  background-size: 150px;
+  background-size: $imgSize;
   background-position: left;
 }
 .right {
   background: url("../img/rightgray.png") no-repeat;
-  background-size: 150px;
-  height: 50vh;
-  margin-top: 10%;
+  background-size: $imgSize;
+  height: $imgHeight;
+  margin-top: $imgTop;
   background-position: right;
 }
 .right:active {
   background: url("../img/right.png") no-repeat;
-  background-size: 150px;
+  background-size: $imgSize;
   background-position: right;
 }
+
 .number {
   margin-bottom: 50%;
   margin-top: 20%;
-}
-.numberCent {
-  font-size: 300px;
-  text-align: center;
+  .numberCent {
+    font-size: 300px;
+    text-align: center;
+  }
 }
 .negative {
   color: red;
@@ -37,11 +42,11 @@
   cursor: pointer;
 }
 @media (max-width: 600px) {
-  .numberCent {
-    font-size: 120px;
-    text-align: center;
-  }
   .number {
     margin-top: 100%;
+    .numberCent {
+      font-size: 120px;
+      text-align: center;
+    }
   }
 }

@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
+    sass = require('gulp-ruby-sass'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     cache = require('gulp-cache'),
@@ -11,10 +12,9 @@ var gulp = require('gulp'),
     gulp.task('styles', function() {
       return gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
-        './node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
-        './views/*.css'
+        './node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
       ])
-      .pipe(concat('styles.css'))
+      .pipe(concat('bundle.css'))
       .pipe(gulp.dest('./dist/'));
     });
     gulp.task('scripts', function() {
@@ -28,7 +28,12 @@ var gulp = require('gulp'),
       .pipe(concat('bundle.js'))
       .pipe(gulp.dest('./dist/'));
     });
+    gulp.task('scss', function() {
+      return sass('styles/*.scss', { style: 'expanded' })
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('./dist/'));
 
+      });
 // gulp.task('default', function() {
 //     gulp.start('styles', 'watch');
 // });
