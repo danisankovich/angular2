@@ -1,35 +1,35 @@
 $imgSize: 150px;
 $imgHeight: 50vh;
-$imgTop: 10%;
+$imgTop: 15%;
 
 .left {
-  background: url("../img/leftgray.png") no-repeat;
+  background: url("../../assets/img/leftgray.png") no-repeat;
   background-size: $imgSize;
   height: $imgHeight;
   margin-top: $imgTop;
   background-position: left;
 }
 .left:active {
-  background: url("../img/left.png") no-repeat;
+  background: url("../../assets/img/left.png") no-repeat;
   background-size: $imgSize;
   background-position: left;
 }
 .right {
-  background: url("../img/rightgray.png") no-repeat;
+  background: url("../../assets/img/rightgray.png") no-repeat;
   background-size: $imgSize;
   height: $imgHeight;
   margin-top: $imgTop;
   background-position: right;
 }
 .right:active {
-  background: url("../img/right.png") no-repeat;
+  background: url("../../assets/img/right.png") no-repeat;
   background-size: $imgSize;
   background-position: right;
 }
 
 .number {
-  margin-bottom: 50%;
-  margin-top: 20%;
+  margin-bottom: 45%;
+  margin-top: 35%;
   .numberCent {
     font-size: 300px;
     text-align: center;
