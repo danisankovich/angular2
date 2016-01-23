@@ -22,11 +22,6 @@
   background-size: 150px;
   background-position: right;
 }
-
-.titleCent {
-  text-align: center;
-  font-size: 72px;
-}
 .number {
   margin-bottom: 50%;
   margin-top: 20%;
@@ -34,6 +29,9 @@
 .numberCent {
   font-size: 300px;
   text-align: center;
+}
+.negative {
+  color: red;
 }
 .hover:hover {
   cursor: pointer;
@@ -45,9 +43,5 @@
   }
   .number {
     margin-top: 100%;
-  }
-  .titleCent {
-    text-align: center;
-    font-size: 36px;
   }
 }

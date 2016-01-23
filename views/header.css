@@ -1,0 +1,10 @@
+.titleCent {
+  text-align: center;
+  font-size: 72px;
+}
+@media (max-width: 600px) {
+  .titleCent {
+    text-align: center;
+    font-size: 36px;
+  }
+}
