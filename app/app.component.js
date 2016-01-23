@@ -2,10 +2,14 @@
   app.AppComponent = ng.core.Component({
     selector: 'my-app',
     template:
-      '<h1>{{title}}</h1>' +
-      '<h1>{{y}}</h1>' +
-        '<p><button class="btn btn-primary" role="button" (click)="up()">+</button>' +
-        '<button class="btn btn-primary" role="button" (click)="down()">-</button></p>'
+    '<div class="col-xs-12"><h1 class="titleCent">{{title}}</h1></div>' +
+        '<div class="col-xs-3 left hover" (click)="down()"></div>' +
+        '<div class="col-xs-6">' +
+        '<div class="col-xs-12">' +
+        '<div class="col-xs-12 number"><h1 class="numberCent">{{y}}</h1></div>' +
+        '</div>'+
+        '</div>' +
+        '<div class="col-xs-3 right hover" (click)="up()"></div>'
   })
   .Class({
     constructor: function() {
