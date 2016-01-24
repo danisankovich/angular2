@@ -37,9 +37,22 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .number .numberCent {
+    margin-top: 5%;
+    font-size: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .number .numberCent {
+    font-size: 160px;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .number .numberCent {
-    font-size: 120px;
+    font-size: 110px;
     text-align: center;
   }
 
@@ -55,7 +68,7 @@ img {
 
   img {
     width: 100px;
-    margin-top: 40%;
+    margin-top: 50%;
   }
 
   .right {
