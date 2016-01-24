@@ -1,39 +1,25 @@
-.appHeight {
-  height: 150px;
-}
-
 .left {
-  background: url("../../assets/img/leftgray.png") no-repeat;
-  background-size: 150px;
-  height: 50vh;
-  margin-top: 15%;
-  background-position: left;
+  height: 150px;
+  margin-top: 20%;
+}
+.left img {
+  float: right;
 }
 
-.left:active {
-  background: url("../../assets/img/left.png") no-repeat;
-  background-size: 150px;
-  background-position: left;
+img {
+  width: 160px;
+}
+
+.middle {
+  margin-top: 5%;
+  text-align: center;
 }
 
 .right {
-  background: url("../../assets/img/rightgray.png") no-repeat;
-  background-size: 150px;
-  height: 50vh;
-  margin-top: 15%;
-  background-position: right;
+  height: 150px;
+  margin-top: 20%;
 }
 
-.right:active {
-  background: url("../../assets/img/right.png") no-repeat;
-  background-size: 150px;
-  background-position: right;
-}
-
-.number {
-  margin-bottom: 45%;
-  margin-top: 35%;
-}
 .number .numberCent {
   font-size: 300px;
   text-align: center;
@@ -47,12 +33,29 @@
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .number {
-    margin-top: 100%;
-  }
+@media (max-width: 500px) {
   .number .numberCent {
     font-size: 120px;
     text-align: center;
+  }
+
+  .left {
+    height: 150px;
+    margin-top: 50%;
+  }
+
+  .middle {
+    margin-top: 50%;
+    text-align: center;
+  }
+
+  img {
+    width: 100px;
+    margin-top: 40%;
+  }
+
+  .right {
+    height: 100px;
+    margin-top: 50%;
   }
 }

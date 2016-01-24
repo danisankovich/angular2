@@ -26,11 +26,12 @@ var gulp = require('gulp'),
         "./node_modules/angular2/bundles/angular2-polyfills.js",
         "./node_modules/rxjs/bundles/Rx.umd.js",
         "./node_modules/angular2/bundles/angular2-all.umd.js",
-        "./src/app/incrementerComponent.component.js"
+        "./src/app/incrementerComponent.component.js",
+        "./src/app/script.js"
       ])
       .pipe(concat('bundle.js'))
       .pipe(gulp.dest('./dist/'));
     });
-  // gulp.task('default', function() {
-  //   gulp.start('styles', 'scss', 'scripts');
-  // });
+  gulp.task('default', function() {
+    gulp.start('styles', 'scss', 'scripts');
+  });

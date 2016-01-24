@@ -1,38 +1,30 @@
 $imgSize: 150px;
-$imgHeight: 50vh;
-$imgTop: 15%;
+$imgSmallSize: 100px;
+$imgBigWidth: 160px;
+$imgSmallWidth: 100px;
+$imgTop: 20%;
+$imgSmallTop: 50%;
 
-.appHeight {
-  height: 150px;
-}
 .left {
-  background: url("../../assets/img/leftgray.png") no-repeat;
-  background-size: $imgSize;
-  height: $imgHeight;
+  height: $imgSize;
   margin-top: $imgTop;
-  background-position: left;
+  img {
+    float: right;
+  }
 }
-.left:active {
-  background: url("../../assets/img/left.png") no-repeat;
-  background-size: $imgSize;
-  background-position: left;
+img {
+  width: $imgBigWidth;
+}
+.middle {
+  margin-top: 5%;
+  text-align: center;
 }
 .right {
-  background: url("../../assets/img/rightgray.png") no-repeat;
-  background-size: $imgSize;
-  height: $imgHeight;
+  height: $imgSize;
   margin-top: $imgTop;
-  background-position: right;
-}
-.right:active {
-  background: url("../../assets/img/right.png") no-repeat;
-  background-size: $imgSize;
-  background-position: right;
 }
 
 .number {
-  margin-bottom: 45%;
-  margin-top: 35%;
   .numberCent {
     font-size: 300px;
     text-align: center;
@@ -44,12 +36,28 @@ $imgTop: 15%;
 .hover:hover {
   cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .number {
-    margin-top: 100%;
     .numberCent {
       font-size: 120px;
       text-align: center;
     }
+  }
+  .left {
+    height: $imgSize;
+    margin-top: $imgSmallTop;
+  }
+  .middle {
+    // height: $imgSmallSize;
+    margin-top: $imgSmallTop;
+    text-align: center;
+  }
+  img {
+    width: $imgSmallWidth;
+    margin-top: 40%;
+  }
+  .right {
+    height: $imgSmallSize;
+    margin-top: $imgSmallTop;
   }
 }
