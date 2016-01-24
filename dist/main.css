@@ -1,3 +1,7 @@
+.appHeight {
+  height: 150px;
+}
+
 .left {
   background: url("../../assets/img/leftgray.png") no-repeat;
   background-size: 150px;

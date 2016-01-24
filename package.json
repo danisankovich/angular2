@@ -1,9 +1,9 @@
 {
   "name": "forrenttest",
   "version": "1.0.0",
-  "author": "",
+  "author": "Michael Sankovich (misankovich@gmail.com ; 201-213-0126)",
   "license": "ISC",
-  "description": "",
+  "description": "coding test",
   "main": "index.js",
   "scripts": {
     "start": "serve"
