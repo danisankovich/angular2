@@ -5,6 +5,9 @@ $imgSmallWidth: 100px;
 $imgTop: 20%;
 $imgSmallTop: 50%;
 
+body {
+  background-color: #EFEFEF;
+}
 .left {
   height: $imgSize;
   margin-top: $imgTop;

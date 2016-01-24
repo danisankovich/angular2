@@ -1,9 +1,7 @@
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
     sass = require('gulp-ruby-sass'),
-    cache = require('gulp-cache'),
-    concat = require('gulp-concat'),
-    imgmin = require('gulp-imagemin');
+    concat = require('gulp-concat');
 
     gulp.task('styles', function() {
       return gulp.src([
@@ -13,11 +11,11 @@ var gulp = require('gulp'),
       .pipe(concat('bundle.css'))
       .pipe(gulp.dest('./dist/'));
     });
+
     gulp.task('scss', function() {
       return sass('./src/styles/*.scss', { style: 'expanded' })
         .pipe(concat('main.css'))
         .pipe(gulp.dest('./dist/'));
-
       });
     gulp.task('scripts', function() {
       return gulp.src([
@@ -32,6 +30,6 @@ var gulp = require('gulp'),
       .pipe(concat('bundle.js'))
       .pipe(gulp.dest('./dist/'));
     });
-  gulp.task('default', function() {
-    gulp.start('styles', 'scss', 'scripts');
-  });
+  // gulp.task('default', function() {
+  //   gulp.start('styles', 'scss', 'scripts');
+  // });
